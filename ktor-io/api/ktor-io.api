@@ -296,11 +296,6 @@ public abstract interface class io/ktor/utils/io/LookAheadSuspendSession : io/kt
 	public abstract fun awaitAtLeast (ILkotlin/coroutines/Continuation;)Ljava/lang/Object;
 }
 
-public final class io/ktor/utils/io/NativeUtilsJvmKt {
-	public static final fun makeShared (Ljava/lang/Object;)V
-	public static final fun preventFreeze (Ljava/lang/Object;)V
-}
-
 public abstract interface class io/ktor/utils/io/ReadSession {
 	public abstract fun discard (I)I
 	public abstract fun getAvailableForRead ()I
@@ -635,13 +630,10 @@ public final class io/ktor/utils/io/charsets/UTFKt {
 	public static synthetic fun decodeUTF8Line$default (Ljava/nio/ByteBuffer;[CIIILjava/lang/Object;)J
 }
 
-public final class io/ktor/utils/io/concurrent/SharedJvmKt {
-	public static final fun shared (Ljava/lang/Object;)Lkotlin/properties/ReadWriteProperty;
-	public static final fun threadLocal (Ljava/lang/Object;)Lkotlin/properties/ReadOnlyProperty;
-}
-
 public final class io/ktor/utils/io/concurrent/SharedKt {
+	public static final fun shared (Ljava/lang/Object;)Lkotlin/properties/ReadWriteProperty;
 	public static final fun sharedLazy (Lkotlin/jvm/functions/Function0;)Lkotlin/properties/ReadOnlyProperty;
+	public static final fun threadLocal (Ljava/lang/Object;)Lkotlin/properties/ReadOnlyProperty;
 }
 
 public class io/ktor/utils/io/core/Buffer {
@@ -1410,12 +1402,6 @@ public final class io/ktor/utils/io/core/internal/UnsafeKt {
 	public static final fun completeReadHead (Lio/ktor/utils/io/core/Input;Lio/ktor/utils/io/core/internal/ChunkBuffer;)V
 	public static final fun prepareReadFirstHead (Lio/ktor/utils/io/core/Input;I)Lio/ktor/utils/io/core/internal/ChunkBuffer;
 	public static final fun prepareReadNextHead (Lio/ktor/utils/io/core/Input;Lio/ktor/utils/io/core/internal/ChunkBuffer;)Lio/ktor/utils/io/core/internal/ChunkBuffer;
-}
-
-public final class io/ktor/utils/io/errors/ErrorsKt {
-	public static final fun TODO_ERROR ()Ljava/lang/Void;
-	public static final fun TODO_ERROR (Ljava/lang/Object;)Ljava/lang/Void;
-	public static final fun incompatibleVersionError ()Ljava/lang/Void;
 }
 
 public final class io/ktor/utils/io/internal/jvm/ErrorsKt {
